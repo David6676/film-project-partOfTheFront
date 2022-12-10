@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Marhey&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.layout {
+    width: 100%;
+}
+.layout main{
+    background-color: #143048;
+}
+.layout header {
+    background-image: url("https://th.bing.com/th/id/R.c44817a70062cba019b1c5b85f5a9a3f?rik=%2bxlFgaFNCczvSw&riu=http%3a%2f%2fcdn.collider.com%2fwp-content%2fuploads%2f2016%2f07%2fmarvel-studios-logo-2016.jpg&ehk=viQzWrDyLUR2Z1ffMZH9f%2b2LKLS4tjursh1AaCQI2Sk%3d&risl=&pid=ImgRaw&r=0");
+    background-size: 450px;
+    background-position:-20px -340px;  
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    min-height: 160px;
+}
+@media (max-width: 850px) {
+    .layout header {
+        background-position:50px -282px;  
+        background-size: 380px;
+    }
+  }
+
+.layout header nav {
+    width: 100%;
+}
+
+.layout header nav ul {
+    /* border: 1px solid rgb(0, 255, 42); */
+    width: 100%;
+    height:75px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.layout header nav ul li {
+    list-style: none;
+}
+
+.layout header nav ul a {
+    text-decoration: none;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    border-radius: 6px;
+    color: #fff;
+    transition: 0.5s;
+    font-family: Marhey;
+    background-color: black;
+
+    /* text-shadow: 10px 10px 30px #2400ff, -10px -10px 30px #7e2bd9;
+    -webkit-text-stroke:2px #fc78ff;
+    -webkit-text-fill-color:transparent ; */
+}
+
+.layout header nav ul a:hover {
+    border: 1px solid black;
+    color: black;
+    background-color: #EB1C22;
+    padding: 9px 29px;
+}
+
+@media (max-width:1003px) {
+    .layout header nav ul {
+        gap: 15px;
+    }
+}
+
+@media (max-width:482px) {
+    .layout ul div:nth-child(1) {
+        gap: 25px;
+    }
+}
+
+.layout header ul button {
+    padding: 9px 30px;
+    border: 1px solid #ccc;
+    background-color: rgb(5, 5, 5);
+    border-radius: 6px;
+    transition: 0.5s;
+    cursor: pointer;
+    font-family: cursive;
+    color: rgb(146, 214, 119);
+    font-size: 19px;
+}
+
+.layout header ul button:hover {
+    background-color: rgb(60, 196, 6);
+    color: white;
+    /* padding: 8px 29px; */
+}

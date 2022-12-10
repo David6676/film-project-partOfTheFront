@@ -1,0 +1,18 @@
+.del {
+    display: flex;
+    justify-content: space-between;
+}
+
+.del button {
+    cursor: pointer;
+    font-size: 25px;
+    color: rgb(221, 221, 221);
+    background-color: transparent;
+    border: none;
+    transition: 0.5s;
+    margin-left: 10px;
+}
+
+.del button:hover {
+    color: red;
+}

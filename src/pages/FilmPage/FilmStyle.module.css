@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Cinzel&family=Cormorant&family=Handlee&family=Marhey&family=Michroma&display=swap');
+
+.style {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    width: 100%;
+    min-height: 900px;
+    padding: 10px 0px;
+}
+
+.style h1 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    letter-spacing: 2px;
+    font-weight: 100;
+    font-family: Cinzel;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 5px;
+}
+
+.style h2 {
+    color: rgba(255, 232, 204, 0.863);
+    font-family: Cormorant;
+}
+
+.style form {
+    display: flex;
+    align-items: flex-end;
+    gap: 20px;
+}
+
+.style textarea {
+    border-radius: 5px;
+    padding: 5px;
+    outline: none;
+    resize: none;
+    font-size: 20px;
+}
+
+.style button {
+    width: 100px;
+    height: 30px;
+    font-size: 17px;
+    font-family: Cinzel;
+    font-weight: bold;
+    cursor: pointer;
+    letter-spacing: 2px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    transition: 0.5s;
+}
+
+.style button:hover {
+    /* border: 1px solid rgba(1, 21, 22, 0.8); */
+    background-color: transparent;
+    color: aliceblue;
+    box-shadow: 0 0 5px 5px;
+}

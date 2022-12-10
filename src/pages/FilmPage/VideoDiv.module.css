@@ -1,0 +1,12 @@
+.Vd{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Vd > video{
+    width: 700px;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 5px skyblue;
+}

@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Cinzel&family=Cormorant&family=Handlee&family=Marhey&family=Michroma&display=swap');
+
+.dS {
+    background-image: url("https://www.hdwallpapers.in/download/iron_man_4k_9-HD.jpg");
+    background-size: cover;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    gap: 20px;
+}
+.dS h1{
+    color: lightcoral;
+    font-family: Cinzel;
+    transition: 0.8s;
+    display: inline-block;
+}
+.dS h1:hover{
+    transform: translate(100px);
+    color:blueviolet;
+}
+
+.dS table {
+    width: 100%;
+    background-color: rgba(20, 20, 20,0.5);
+    color: wheat;
+    font-size: 22px;
+    border-collapse: collapse;
+}
+
+.dS table th {
+    text-align: start;
+    padding-bottom: 5px;
+    padding: 10px;
+    font-family: cursive;
+}
+
+.dS table tr td {
+    padding: 10px;
+    font-family: Cormorant;
+    font-size: 24px;
+}
+
+.dS table tr {
+    border-bottom: 1px solid #cccc;
+}
+
+.dS table tbody tr:hover {
+    background-color: rgb(245, 222, 179, 0.9);
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+.dS tbody button{
+    cursor: pointer;
+    padding: 10px 30px;
+    border: 1px solid antiquewhite;
+    border-radius: 8px;
+    font-family: Cormorant;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 17px;
+    background-color:  rgba(255, 238, 0, 0.5);
+    color: rgb(0, 0, 0);
+    transition: 0.5s;
+}
+.dS tbody button:hover{
+    background-color:rgb(235,28,34)  ;
+}

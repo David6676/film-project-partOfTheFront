@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Cinzel&family=Cormorant&family=Handlee&family=Marhey&display=swap');
+
+.prevNext {
+    width: 75%;
+    /* height: 250px; */
+    color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Handlee;
+    /* border: 2px solid yellow; */
+    height: 300px;
+}
+
+.prevNext>div {
+    background-color: rgba(22, 1, 1, 0.8);
+    box-shadow: 0 0 5px 5px rgb(138, 137, 138);
+    width: 80%;
+    border-radius: 10px;
+}
+
+.prevNext ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.prevNext li {
+    list-style: none;
+}
+
+.prevNext a {
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 25px;
+}
+.prevNext a:hover{
+    color: rgb(177, 226, 43);
+}
+
+.prevNext img {
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+.prevNext img:hover {
+    transform: scale(1.2);
+}
+.prevNext button{
+    background-color: transparent;
+    border: none;
+    color: antiquewhite;
+    cursor: pointer;
+    font-size: 25px;
+}
+.prevNext button:hover{
+    color: aqua;
+}

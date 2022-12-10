@@ -1,0 +1,7 @@
+.sign{
+    width: 100%;
+    display: flex;
+    background-image: url("https://wallpaperaccess.com/full/3967998.jpg");
+    background-size: cover;
+    height: 100vh;
+}

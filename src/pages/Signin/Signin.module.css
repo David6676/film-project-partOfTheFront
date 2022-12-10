@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Cinzel&family=Cormorant&family=Handlee&family=Marhey&display=swap');
+
+.signin {
+    margin-left: 50px;
+    margin-top: 30px;
+    background-color: rgba(22, 1, 1, 0.8);
+    height: 250px;
+    border: none;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 0 5px 5px rgb(138, 137, 138);
+}
+
+.signin h2 {
+    color: rgb(138, 137, 138);
+    font-family: Cinzel;
+    letter-spacing: 1px;
+    font-size: 30px;
+}
+
+.signin form {
+    width: 300px;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.signin form input{
+    width: 250px;
+    height: 40px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    border: 1px solid rgb(87, 87, 87);
+    outline: none;
+    padding-left: 10px;
+}
+
+.signin form button {
+    width: 155px;
+    font-size: 27px;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+    text-decoration: none;
+    color: rgb(143, 144, 145);
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 0 10px;
+    background-color: transparent;
+    cursor: pointer;
+    font-family: Bangers;
+    transition: 0.5s;
+    letter-spacing: 3px;
+}
+
+.signin form button::after {
+    content: "";
+    position: absolute;
+    background-color: #eede04;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.signin form button:hover::after {
+    width: 100%;
+}
+
+.signin form button:hover {
+    color: #eede04;
+}

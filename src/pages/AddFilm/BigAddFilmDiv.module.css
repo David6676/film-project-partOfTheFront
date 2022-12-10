@@ -1,0 +1,9 @@
+.bafd{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("https://wallpapercave.com/wp/wp7593599.jpg");
+    background-size: cover;
+}

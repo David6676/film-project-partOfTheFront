@@ -1,0 +1,6 @@
+.Md {
+    width: 100%;
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+}

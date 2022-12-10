@@ -1,0 +1,10 @@
+.pS{
+    width: 100%;
+    background-image: url("https://www.pcclean.io/wp-content/uploads/2020/4/2eMJZv.jpg");
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+}
+.pS h1{
+    color: rgb(2, 250, 250);
+}

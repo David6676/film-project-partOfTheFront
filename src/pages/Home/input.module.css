@@ -1,0 +1,32 @@
+.inp {
+    width: 550px;
+    height: 80px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.inp select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #cccc;
+    margin-right: 5px;
+    outline: none;
+}
+
+.inp input {
+    border-radius: 5px;
+    outline: none;
+    padding-left: 10px;
+    min-width: 200px;
+    height: 40px;
+    border: 1px solid #cccc;
+    letter-spacing: 1px;
+    font-family: cursive;
+}
+
+.inp i {
+    position: relative;
+    left: -35px;
+    color: rgba(95, 95, 95, 0.8);
+}
