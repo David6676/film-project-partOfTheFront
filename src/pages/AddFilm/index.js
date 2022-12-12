@@ -4,10 +4,10 @@ import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { addFilm, getCountry, getGenres, getTranslation, getYear } from '../../features/film/filmApi'
 import { useEffect } from "react";
-import AddFilmStyle from "./AddFilm.module.css"
-import AddFilmDiv from "./AddFilmDiv.module.css"
-import FileStyle from "./file.module.css"
-import BigAddFilmDiv from "./BigAddFilmDiv.module.css"
+import AddFilmStyle from "./AddFilm.module.css";
+import AddFilmDiv from "./AddFilmDiv.module.css";
+import FileStyle from "./file.module.css";
+import BigAddFilmDiv from "./BigAddFilmDiv.module.css";
 import { PaginatedItems } from "../Pagination";
 
 export const AddFilm = () => {
