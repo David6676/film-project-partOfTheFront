@@ -29,11 +29,6 @@ export const Home = () => {
     await dispatch(yarsSearch(e.target.value))
   }
 
-  // const searchGenre = async (e) => {
-  //   console.log(e.target.value);
-  //   await dispatch(genreSearch(e.target.value))
-  // }
-
   useEffect(() => {
     dispatch(getFilm())
     dispatch(getGenres())
@@ -63,15 +58,6 @@ export const Home = () => {
         <select onChange={searchYear}>
           {
             years.map((el, index) => {
-              return (
-                <option value={el.id} key={index}>{el.name}</option>
-              )
-            })
-          }
-        </select>
-        <select /*onChange={searchGenre} */ >
-          {
-            genres.map((el, index) => {
               return (
                 <option value={el.id} key={index}>{el.name}</option>
               )

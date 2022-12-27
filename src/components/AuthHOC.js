@@ -19,27 +19,16 @@ export const AuthHOC = () => {
       });
   }, []);
 
+
   if (response) {
     let min = Date.now()
-    let mnacac = user.blockTime - min
-    if (user.blockTime < min) {
+    if (user && user.blockTime < min) {
       return <Outlet />
+    } else if (!user) {
+      return <Navigate to="/" replace={true} />;
     } else {
-      alert("You Block",mnacac )
+      alert("You Block")
       return <Navigate to="/" replace={true} />;
     }
-  } else {
-    <></>
   }
-
-  if (response) {
-    if (user) {
-      return <Outlet />;
-    } else {
-      return <Navigate to="/" replace={true} />;
-    }
-  } else {
-    return <></>;
-  }
-
 };
