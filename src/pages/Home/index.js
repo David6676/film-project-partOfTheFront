@@ -1,16 +1,18 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { deleteFilm, genreSearch, getFilm, getGenres, getTranslation, getYear, searchFilm, searchTranslation, yarsSearch } from "../../features/film/filmApi";
+import { deleteFilm, getFilm, getGenres, getTranslation, getYear, searchFilm, searchTranslation, yarsSearch } from "../../features/film/filmApi";
 import { Link } from "react-router-dom"
 import HomeStyle from "./Home.module.css"
 import inputSearch from "./input.module.css"
 import delBtn from "./btn.module.css"
 import body from "./body.module.css"
+import Paginat from "./Paginat.module.css"
+import { PaginatedItems } from "../Pagination";
 
 
 export const Home = () => {
 
-  const { films, genres, translation, years } = useSelector((state) => state.film);
+  const { films, translation, years } = useSelector((state) => state.film);
 
   let dispatch = useDispatch()
 
@@ -44,6 +46,9 @@ export const Home = () => {
 
   return (
     <div className={body.bd}>
+      <div className={Paginat.pg}>
+        <PaginatedItems />
+      </div>
       <div className={inputSearch.inp}>
         <input onChange={search} type="search" name="" placeholder="Sarch Film..." /><i className="fa-solid fa-magnifying-glass"></i>
         <select onChange={searchLanguage}>

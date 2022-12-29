@@ -51,12 +51,6 @@ export const searchTranslation = createAsyncThunk("users/search", async (e) => {
   return response.data;
 });
 
-// export const genreSearch = createAsyncThunk("users/search", async (e) => {
-//   const response = await Axios.get("/genreSearch/" + e);
-//   console.log(response.data);
-//   return response.data;
-// });
-
 export const yarsSearch = createAsyncThunk("users/search", async (e) => {
   const response = await Axios.get("/searchYear/" + e);
   return response.data;

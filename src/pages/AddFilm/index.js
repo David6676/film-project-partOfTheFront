@@ -6,9 +6,9 @@ import { addFilm, getCountry, getGenres, getTranslation, getYear } from '../../f
 import { useEffect } from "react";
 import AddFilmStyle from "./AddFilm.module.css";
 import AddFilmDiv from "./AddFilmDiv.module.css";
+import Texta from "./Texta.module.css";
 import FileStyle from "./file.module.css";
 import BigAddFilmDiv from "./BigAddFilmDiv.module.css";
-import { PaginatedItems } from "../Pagination";
 
 export const AddFilm = () => {
 
@@ -74,7 +74,7 @@ export const AddFilm = () => {
                             {errors.time && <p style={{ color: "red" }}>Please enter Time  </p>}
                         </div>
                     </div><br />
-                    <div>
+                    <div className={Texta.tx}>
                         <textarea cols="100" rows="5"
                             {...register("description", { required: true })} placeholder="Description">
                             {errors.description && <p style={{ color: "red" }}>Please enter Description</p>}
@@ -147,7 +147,6 @@ export const AddFilm = () => {
                     <button>Add</button><br />
                 </form>
             </div>
-            <PaginatedItems/>
         </div>
     )
 };

@@ -27,12 +27,16 @@
     width: 100%;
     background-color: rgba(20, 20, 20,0.5);
     color: wheat;
-    font-size: 22px;
     border-collapse: collapse;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: flex-start; */
+    /* flex-direction: column; */
 }
 
 .dS table th {
     text-align: start;
+    font-size:clamp(12px,6vw,24px);
     padding-bottom: 5px;
     padding: 10px;
     font-family: cursive;
@@ -41,7 +45,7 @@
 .dS table tr td {
     padding: 10px;
     font-family: Cormorant;
-    font-size: 24px;
+    font-size:clamp(12px,6vw,24px);
 }
 
 .dS table tr {
@@ -62,9 +66,22 @@
     font-weight: bold;
     letter-spacing: 1px;
     font-size: 17px;
-    background-color:  rgba(255, 238, 0, 0.5);
+    background-color:rgba(255, 238, 0, 0.5);
     color: rgb(0, 0, 0);
     transition: 0.5s;
+}
+@media (max-width:720px) {
+    .dS tbody button{
+        padding: 5px 10px;
+    }
+    .dS table th{
+        padding: 0;
+        padding-right: 2px;
+    } 
+    .dS table td {
+        padding: 0 !important;
+        padding-right: 2px;
+    } 
 }
 .dS tbody button:hover{
     background-color:rgb(235,28,34)  ;

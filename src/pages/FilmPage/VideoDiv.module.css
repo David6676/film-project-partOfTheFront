@@ -5,8 +5,8 @@
     align-items: center;
 }
 .Vd > video{
-    width: 700px;
-    height: 400px;
+    width: clamp(200px,90%,700px);
+    min-height: 400px;
     border-radius: 10px;
     box-shadow: 0 0 5px 5px skyblue;
 }

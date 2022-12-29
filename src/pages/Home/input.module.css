@@ -1,9 +1,19 @@
 .inp {
-    width: 420px;
-    height: 80px;
+    max-width: 420px;
+    min-height: 80px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    flex-wrap: wrap;
+}
+
+@media (max-width:401px) {
+    .inp{
+        margin-top: 50px;
+        margin-bottom: 30px;
+        flex-direction: column;
+        gap: 5px;
+    }    
 }
 
 .inp select {
@@ -29,4 +39,12 @@
     position: relative;
     left: -35px;
     color: rgba(95, 95, 95, 0.8);
+}
+
+@media (max-width:399px) {
+    .inp i{
+        position: relative;
+        left: 85px;
+        top: -34px;
+    }
 }

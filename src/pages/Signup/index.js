@@ -1,19 +1,16 @@
 import React from "react";
 import { useForm } from "react-hook-form";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { addUser } from "../../features/auth/authApi";
 import { useNavigate } from "react-router-dom";
 import SignupStyle from "./Signup.module.css"
 import BigSignupDiv from "./BigSignupDiv.module.css"
-import { PaginatedItems } from "../Pagination";
 
 
 export const Signup = () => {
 
   const dispatch = useDispatch();
   const navigate = useNavigate();
-
-  const { films } = useSelector((state) => state.film);
 
   const {
     register,
@@ -56,9 +53,6 @@ export const Signup = () => {
           <button>Register</button>
         </form>
       </div><br />
-      <PaginatedItems />
     </div>
   );
 };
-
-

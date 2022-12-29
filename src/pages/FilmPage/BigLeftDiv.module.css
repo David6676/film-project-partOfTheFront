@@ -1,3 +1,9 @@
 .Ld{
     width: 50%;
 }
+
+@media (max-width:620px) {
+    .Ld{
+        width: 100%;;
+    }
+}

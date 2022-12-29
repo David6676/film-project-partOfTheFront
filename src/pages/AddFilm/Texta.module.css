@@ -1,0 +1,3 @@
+.tx{
+    width: clamp(150px,90%,750px);
+}

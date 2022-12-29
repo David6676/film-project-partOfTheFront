@@ -3,4 +3,16 @@
     border-radius: 8px;
     padding: 10px;
     display: flex;
+    flex-wrap: wrap;
+    min-height: 710px;
+    gap: 10px;
+    background-color: rgba(0, 0, 0,0.5);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+@media (max-width:620px) {
+    .Md{
+        flex-direction: column;
+    }
 }

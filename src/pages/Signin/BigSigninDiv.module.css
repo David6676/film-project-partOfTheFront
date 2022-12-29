@@ -5,3 +5,8 @@
     background-size: cover;
     height: 100vh;
 }
+@media (max-width:614px){
+    .sign{
+        justify-content: center;
+    }
+}

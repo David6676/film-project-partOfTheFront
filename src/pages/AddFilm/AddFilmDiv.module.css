@@ -6,11 +6,18 @@
 .d1{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 10px;
-    /* border: 2px solid red; */
-    min-width: 833px;
+    max-width: 838px;
     color: white;
 }
+
+.d1 > div{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
 .d1 select{
     height: 80px;
     width: 80px;

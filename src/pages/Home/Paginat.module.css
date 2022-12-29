@@ -1,0 +1,15 @@
+.pg{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+@media (max-width:535px) {
+    .pg{
+        padding-top: 50px;
+    }
+}
+@media (max-width:1100px) {
+    .pg{
+        padding-top: 50px;
+    }
+}

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Cinzel&family=Cormorant&family=Handlee&family=Marhey&family=Michroma&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,7 +8,7 @@
 
 .addFilm {
     width: 100%;
-    height: 500px;
+    min-height: 500px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -25,56 +25,69 @@
     background-color: rgba(20, 46, 49, 0.7);
     box-shadow: 0px 0px 5px 5px #D7E0D7
 }
-.addFilm form h2{
+
+@media (max-width:387px) {
+    .addFilm form{
+        padding: 0;
+    }  
+}
+
+.addFilm form h2 {
     text-align: center;
     color: yellow;
     letter-spacing: 1px;
     font-family: Michroma;
     padding: 5px;
     border-radius: 5px;
-    
+
 }
-.addFilm form input{
+
+.addFilm form input {
     border-radius: 5px;
     outline: none;
     padding-left: 10px;
     min-width: 200px;
     height: 40px;
-    background-color:rgba(255, 255, 255, 0.5) ;
+    background-color: rgba(255, 255, 255, 0.5);
     border: 1px solid white;
 }
-.addFilm form input::placeholder{
+
+.addFilm form input::placeholder {
     color: black;
     font-family: cursive;
 
 }
+
 .addFilm form textarea {
     outline: none;
     width: 100%;
     padding: 10px 0 0 10px;
     border-radius: 5px;
     resize: none;
-    background-color:rgba(255, 255, 255, 0.5) ;
+    background-color: rgba(255, 255, 255, 0.5);
     border: 1px solid white;
 }
-.addFilm form textarea::placeholder{
+
+.addFilm form textarea::placeholder {
     color: black;
     font-family: cursive;
 }
-.addFilm form p{
+
+.addFilm form p {
     color: rgb(255, 255, 255);
-    
+
 }
-.addFilm form select{
+
+.addFilm form select {
     outline: none;
     border-radius: 5px;
-    background-color:rgba(255, 255, 255, 0.5) ;
+    background-color: rgba(255, 255, 255, 0.5);
     border: 1px solid rgb(8, 8, 8);
     padding: 5px;
     font-family: cursive;
 }
 
-.addFilm form button{
+.addFilm form button {
     width: 150px;
     height: 40px;
     cursor: pointer;
@@ -88,7 +101,8 @@
     letter-spacing: 3px;
     font-size: 20px;
 }
-.addFilm form button:hover{
+
+.addFilm form button:hover {
     border: 2px solid yellow;
     box-shadow: 0 0 5px 5px yellow;
     background-color: rgb(60, 71, 35);

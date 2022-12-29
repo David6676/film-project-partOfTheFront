@@ -1,8 +1,7 @@
 .mesDiv {
   margin-left: 10px;
   padding: 20px;
-  width:400px;
-  /* border: 2px solid red; */
+  max-width: 400px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -11,6 +10,13 @@
   box-shadow: 0 0 5px 5px rgb(69, 158, 69);
   border-radius: 8px;
 }
+
+@media (max-width:420px) {
+  .mesDiv {
+    margin: 0;
+  }
+}
+
 .mesDiv div {
   width: 95%;
   height: 300px;
@@ -22,14 +28,17 @@
   flex-direction: column;
   gap: 5px;
 }
+
 .mesDiv p {
   padding: 10px;
 }
-.mesDiv form{
-    width: 95%;
-    gap: 10px;
-    display: flex;
+
+.mesDiv form {
+  width: 95%;
+  gap: 10px;
+  display: flex;
 }
+
 .mesDiv textarea {
   outline: none;
   width: 100%;
@@ -37,6 +46,7 @@
   border-radius: 5px;
   resize: none;
 }
+
 .mesDiv button {
   width: 100px;
   font-size: 18px;
@@ -47,7 +57,8 @@
   font-family: cursive;
   transition: 0.5s;
 }
-.mesDiv button:hover{
+
+.mesDiv button:hover {
   background-color: rgb(183, 194, 26);
   color: aliceblue;
   border: 2px solid;

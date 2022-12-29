@@ -7,7 +7,7 @@
 
 .home>div {
     border: 1px solid grey;
-    min-width: 300px;
+    min-width: 200px;
     margin-left: 20px;
     padding: 10px;
     border-radius: 8px;
@@ -18,6 +18,12 @@
     font-size: 13px;
 }
 
+@media (max-width:805px) {
+    .home>div{
+        margin-left: 0;
+    }
+}
+
 .home a {
     color: rgb(18, 124, 211);
     text-decoration: none;
@@ -26,6 +32,8 @@
     letter-spacing: 1px;
     cursor: pointer;
     transition: 0.5s;
+    font-size: clamp(16px,5vw, 25px);
+    text-align: center;
 }
 
 .home a::after {
